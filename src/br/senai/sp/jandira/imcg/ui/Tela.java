@@ -6,18 +6,18 @@ import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-public class Tela
-{
-    public void criarTela()
-    {
+public class Tela {
+    public void criarTela() {
         JFrame telaIcm = new JFrame();
-        telaIcm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // fecha o programa quando a janela é fechada;
+        telaIcm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); /* fecha o
+        programa quando a janela é fechada; */
         telaIcm.setSize(300, 400);
         telaIcm.setTitle("Calculadora de IMC");
         telaIcm.setLayout(null);
 
         // criar um label:
-        JLabel labelIdade = new JLabel("Qual a sua idade?"); // deve contar o prefixo lbl ou label;
+        JLabel labelIdade = new JLabel("Qual a sua idade?"); /* deve
+        acrescentar o prefixo lbl ou label; */
         labelIdade.setBounds(20, 10, 120, 30);
         JLabel labelResultado = new JLabel("Resultado aqui!");
         labelResultado.setBounds(20, 60, 150, 24);
@@ -40,44 +40,36 @@ public class Tela
         telaIcm.setVisible(true); // sempre no final do código;
 
         // definir ouvinte(listener) do click do mouse:
-        textFieldIdade.addMouseListener(new MouseListener()
-        {
+        textFieldIdade.addMouseListener(new MouseListener() {
             @Override
-            public void mouseClicked(MouseEvent e) // a variável e guarda o valor do evento do mouse;
-            {
-                System.out.println("Clicou!");
+            public void mouseClicked(MouseEvent e) { /* a variável e guarda o
+            valor do evento do mouse; */
+
             }
 
             @Override
-            public void mousePressed(MouseEvent e)
-            {
-                System.out.println("Apertou!");
+            public void mousePressed(MouseEvent e) {
             }
 
             @Override
-            public void mouseReleased(MouseEvent e)
-            {
-                System.out.println("Soltou!");
+            public void mouseReleased(MouseEvent e) {
             }
 
             @Override
-            public void mouseEntered(MouseEvent e)
-            {
-                System.out.println("Entrou!");
+            public void mouseEntered(MouseEvent e) {
             }
 
             @Override
-            public void mouseExited(MouseEvent e)
-            {
-                System.out.println("Saiu!");
+            public void mouseExited(MouseEvent e) {
             }
         });
-        textFieldIdade.addKeyListener(new KeyListener()
+/*        textFieldIdade.addKeyListener(new KeyListener()
         {
             @Override
             public void keyTyped(KeyEvent e)
             {
-                System.out.println("apertou a tecla " + e.getKeyChar() + " qualquer!");
+                System.out.println("apertou a tecla " + e.getKeyChar() +
+                        " qualquer!");
                 System.out.println(e.getExtendedKeyCode());
             }
 
@@ -92,6 +84,6 @@ public class Tela
             {
                 System.out.println("Tecla solta!");
             }
-        });
+        });*/
     }
 }
