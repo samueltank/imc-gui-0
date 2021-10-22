@@ -3,12 +3,14 @@ package br.senai.sp.jandira.imcg.ui;
 import br.senai.sp.jandira.imcg.model.ValorIMC_pessoa;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class Tela {
     public void criarTela() {
 
+        Font titleFont = new Font("Arial", Font.BOLD, 28);
         // Criação do objeto pessoaIMC:
         ValorIMC_pessoa samuel = new ValorIMC_pessoa();
 
@@ -21,6 +23,8 @@ public class Tela {
 
         // criar um label:
         JLabel lableTitle = new JLabel("Calcular I.M.C");
+        lableTitle.setFont(titleFont);
+        lableTitle.setForeground(Color.BLUE);
         lableTitle.setBounds(15, 20, 500, 80);
         JLabel labelAltura = new JLabel("Qual a sua Altura?"); /* <- deve
         acrescentar o prefixo lbl ou label; */
@@ -61,6 +65,7 @@ public class Tela {
             @Override public void mouseClicked(MouseEvent e) {
                 samuel.calcular(textFieldAltura.getText(), textFieldPeso.getText());
                 labelIMC.setText(samuel.getIMC_String());
+                labelSaida.setText(samuel.CalcularSaidaText());
             }
 
             @Override public void mousePressed(MouseEvent e) {
