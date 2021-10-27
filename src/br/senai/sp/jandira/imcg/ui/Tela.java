@@ -36,23 +36,23 @@ public class Tela {
         JLabel labelPeso = new JLabel("Qual o seu peso?");
         labelPeso.setBounds(15, 155, 120, 30);
         JLabel labelIMC = new JLabel("Seu I.M.C: ");
-        labelIMC.setBounds(15, 260, 150, 24);
+        labelIMC.setBounds(15, 260, 150, 30);
         JLabel labelSaida = new JLabel("Sua situação: ");
-        labelSaida.setBounds(15, 294, 150, 24);
+        labelSaida.setBounds(15, 294, 150, 30);
         JLabel lblOutputIMC = new JLabel(" ");
         lblOutputIMC.setFont(status);
         lblOutputIMC.setForeground(Color.green);
-        lblOutputIMC.setBounds(140, 260, 150, 24);
+        lblOutputIMC.setBounds(140, 260, 150, 30);
         JLabel lblOutputStatus = new JLabel(" ");
         lblOutputStatus.setFont(status);
         lblOutputStatus.setForeground(Color.green);
-        lblOutputStatus.setBounds(140, 295, 200, 24);
+        lblOutputStatus.setBounds(140, 295, 200, 30);
 
         // criação do jtext:
         JTextField textFieldAltura = new JTextField();
-        textFieldAltura.setBounds(140, 110, 100, 24);
+        textFieldAltura.setBounds(140, 110, 100, 30);
         JTextField textFieldPeso = new JTextField();
-        textFieldPeso.setBounds(140, 160, 100, 24);
+        textFieldPeso.setBounds(140, 160, 100, 30);
 
 
         // criar um botão:
