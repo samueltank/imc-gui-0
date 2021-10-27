@@ -12,7 +12,7 @@ public class Tela {
 
         // Criação de fontes:
         Font titleFont = new Font("Arial", Font.BOLD, 28);
-        Font status = new Font("Arial", Font.ITALIC, 18);
+        Font status = new Font("Arial", Font.ITALIC, 20);
 
         // Criação do objeto pessoaIMC:
         ValorIMC_pessoa samuel = new ValorIMC_pessoa();

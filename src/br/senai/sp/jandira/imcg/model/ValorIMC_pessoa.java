@@ -32,10 +32,6 @@ abstract class IMC {
         return resultIMC;
     }
 
-    public String getIMC_String() {
-        return String.valueOf(getResultIMC());
-    }
-
     public String CalcularSaidaText() {
         double resultIMC = Double.parseDouble(getResultIMC());
         if (resultIMC >= 40) {
@@ -56,6 +52,8 @@ abstract class IMC {
 
 public class ValorIMC_pessoa extends IMC {
     public void calculate(String heigth, String weigth) {
+        heigth.replace(",",".");
+        weigth.replace(",", ".");
         setWeight(Double.parseDouble(weigth));
         setHeight(Double.parseDouble(heigth));
 
@@ -64,5 +62,6 @@ public class ValorIMC_pessoa extends IMC {
 
         double result = (this.weight / Math.pow(this.height, 2));
         resultIMC = df.format(result);
+        setResultIMC(resultIMC.replace(",", "."));
     }
 }

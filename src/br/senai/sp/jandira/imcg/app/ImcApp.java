@@ -1,6 +1,5 @@
 package br.senai.sp.jandira.imcg.app;
 
-import br.senai.sp.jandira.imcg.model.ValorIMC_pessoa;
 import br.senai.sp.jandira.imcg.ui.Tela;
 
 public class ImcApp {
